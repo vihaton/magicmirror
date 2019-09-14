@@ -4,9 +4,10 @@ cd ~/projects/magicmirror
 
 source venv/bin/activate
 
-export FLASK_APP=hello.py
+# export FLASK_APP=hello.py
 
-flask run >> log.txt 2>&1 &
+# flask run >> log.txt 2>&1 &
+
+python3 hello.py >> log.txt 2>&1 &
 
 exit 0
-# python3 hello.py
