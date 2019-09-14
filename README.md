@@ -16,5 +16,8 @@ Operating System: Raspian 2019-07-10-raspbian-buster-full.img
 * `export FLASK_APP=hello.py` to add the main file to your path, so Flask finds your "server root"
 * `flask run`
 
-Configure SSH in pi:  
+## Configure SSH  
 https://www.raspberrypi.org/documentation/remote-access/ssh/
+
+## TODO
+1. Automated first use configuration 
