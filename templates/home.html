@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Flask Tutorial</title>
-  </head>
-  <body>
-    {% extends "template.html" %}
-    {% block content %}
-    
-    <h1> My First Try Using Flask </h1>
-    <p> Flask is Fun </p>
-    
-    {% endblock %}
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Magic Mirror Home</title>
+  <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      h = checkTime(h);
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('clock').innerHTML =
+        h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
+</head>
+
+<body onload="startTime()">
+  {% extends "template.html" %}
+  {% block content %}
+  <div class="container">
+
+    <div class="clock">
+      <h1 id="clock"></h1>
+    </div>
+
+    <div class="footer">
+      <p>Made by V&J</p>
+    </div>
+  </div>
+  {% endblock %}
+</body>
+
 </html>
