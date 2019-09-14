@@ -33,7 +33,7 @@ changed `/etc/xdg/lxsession/LXDE-pi/autostart` to
 @xset s off
 @xset -dpms
 @xset s noblank
-@chromium-browser --kiosk --incognito http://127.0.0.1:5000/
+@chromium-browser --kiosk --incognito http://localhost:5000/
 ```
 
 ### launch flask

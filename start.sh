@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cd ~/projects/magicmirror
+# cd ~/projects/magicmirror
 
-source venv/bin/activate
+source /home/pi/projects/magicmirror/venv/bin/activate
 
 export FLASK_APP=hello.py
 
