@@ -4,6 +4,7 @@ cd ~/projects/magicmirror
 
 source venv/bin/activate
 
-export FLASK_APP=hello.py
+# export FLASK_APP=hello.py
+# flask run
 
-flask run
+python3 hello.py
