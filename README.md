@@ -1,5 +1,7 @@
 # magicmirror
 
+[Project follows initially this recipe](https://www.instructables.com/id/How-to-Make-a-Magic-Mirror/)
+
 ## Init
 
 Device: Raspberry Pi 3 B+
