@@ -58,8 +58,7 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-# ADDED
-~/projects/magicmirror/start.sh
+/home/pi/projects/magicmirror/start.sh &
 
 exit 0
 ```
