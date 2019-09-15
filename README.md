@@ -24,7 +24,7 @@ https://www.raspberrypi.org/documentation/remote-access/ssh/
 ### autostart
 changed `/etc/xdg/lxsession/LXDE-pi/autostart` to
 ```
-#@lxpanel --profile LXDE-pi
+@lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 #@xscreensaver -no-splash
 #point-rpi
